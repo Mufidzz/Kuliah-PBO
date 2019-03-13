@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentPane" prefHeight="269.0" prefWidth="325.0" style="-fx-background-color: #EAE8DC;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fidz.LoginController">
+   <children>
+      <Button layoutX="295.0" mnemonicParsing="false" onMouseClicked="#closeMe" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lib/close-ico.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutY="56.0" prefHeight="0.0" prefWidth="325.0" style="-fx-background-color: #F4F2EC;" />
+      <Button layoutX="111.0" layoutY="186.0" mnemonicParsing="false" onAction="#loginBtnClicked" prefHeight="25.0" prefWidth="103.0" style="-fx-background-radius: 5px; -fx-background-color: #BE2623;" text="Login" textFill="#f4f2ec">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Username" alignment="CENTER" layoutX="50.0" layoutY="86.0" prefHeight="25.0" prefWidth="225.0" promptText="Username" style="-fx-background-color: none; -fx-border-color: rgba(0,0,0,0) rgba(0,0,0,0) #BE2623 rgba(0,0,0,0);" />
+      <PasswordField fx:id="Password" alignment="CENTER" layoutX="50.0" layoutY="127.0" prefHeight="25.0" prefWidth="225.0" promptText="Password" style="-fx-background-color: none; -fx-border-color: rgba(0,0,0,0) rgba(0,0,0,0) #BE2623 rgba(0,0,0,0);" />
+      <Label layoutX="123.0" layoutY="17.0" prefHeight="30.0" prefWidth="79.0" text="LOGIN" textAlignment="CENTER" textFill="#be2623" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="217.0" text="Not yet Member ?" textFill="#0e3746">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button layoutX="179.0" layoutY="211.0" mnemonicParsing="false" onAction="#registerBtnClicked" style="-fx-background-color: none;">
+         <graphic>
+            <Label onMouseClicked="#registerBtnClicked" text="Register" textFill="#0e3746" underline="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </graphic>
+      </Button>
+      <Button layoutX="121.0" layoutY="233.0" mnemonicParsing="false" onAction="#forgotBtnClicked" style="-fx-background-color: none;">
+         <graphic>
+            <Label text="Forgot Password" textFill="#be2623" underline="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="238.0" layoutY="242.0" mnemonicParsing="false" onAction="#showBtnClicked" style="-fx-background-color: none;">
+         <graphic>
+            <Label onMouseClicked="#registerBtnClicked" text="Show Creator !!" textAlignment="RIGHT" textFill="#0e3746" underline="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
